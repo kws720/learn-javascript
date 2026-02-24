@@ -44,27 +44,13 @@
     </div>
 
     <div>
-      <script> 
-      function gugudan(val){
-        alert(val);
-        const arrGugudan = [];
-        
-
-        for(let i = 1;i < 9; i++){
-          arrGugudan[i-1] = val * 1;
-          alert(arrGugudan[i-1]);
-        }
-        document.getElementById("gugudanAnswer").innerText = arrGugudan;
-        
-      }
-      </script>
-      <div style="padding-left: 10px;  background-color: #92588f ; border: solid; border-color: #7d72af; margin-bottom: 30px; height: 30px;">
+      <script src="./array.js"></script>
+      <div style="padding-left: 10px;  background-color: #5eb3c2 ; border: solid; border-color: #005d41; margin-bottom: 30px; height: 30px;">
         구구단 몇단을 실행할까요? 
         <input type="text" id = "val"/>&nbsp;
         <input type="button" onclick="gugudan(val.value);" value = "버튼" /> 
-        <input type="text" id = "gugudanAnswer">
       </div>
-     
     </div>
+
 </body>
 </html>
