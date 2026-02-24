@@ -31,7 +31,7 @@ const fnTest = (username) => {
   if(username.value == "" || username.value == null  ){
     alert("사용자 이름을 입력해주세요.");
   }else{
-    console.log(`사용자 이름 : + ${username.value}`);
+    console.log(`사용자 이름 : ${username.value}`);
     }
 }
 
@@ -57,16 +57,15 @@ const fnHello = () => {
 let calcVal = "";
 const calc = (num1,num2,yunsanja) => {
   if(yunsanja.value == "sum"){
-    calcVal = num1.value+num2.value;
+    calcVal = Number(num1.value) + Number(num2.value);
   }else if(yunsanja.value == "minus"){
-    calcVal = num1.value-num2.value;
+    calcVal = Number(num1.value)-Number(num2.value);
   }else if(yunsanja.value == "multiple"){
-    calcVal = num1.value*num2.value;
+    calcVal = Number(num1.value)*Number(num2.value);
   }else if(yunsanja.value == "divid"){
-    calcVal = num1.value/num2.value;
+    calcVal = Number(num1.value)/nNumber(num2.value);
   }else{
     console.log("잘못입력된 연산자입니다.");
   }
   console.log("🚀 ~ calc ~ calcVal:", calcVal)  
 };
-
